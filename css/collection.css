@@ -1,15 +1,17 @@
 .collection{
   margin-top: var(--comment-magin-top);
-  height: 200px;
+  height: 300px;
 }
 .collection_ttl {
   text-align: center;
   color: var(--main-color);
-  font-size: 1.7rem;
+  font-size: 1rem;
   font-weight: 900;
 }
 .collection_txt{
   text-align: center;
+  font-size: 1.4rem;
+
 }
 
 

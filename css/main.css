@@ -21,14 +21,17 @@
   --comment-magin-top: 15px;
 }
 
-*{
+*
+{
   font-size: 14px;
-  line-height: 1.7rem;
+  line-height: 1.9rem;
   font-family: 'GmarketSansMedium';
-
+}
+li{
+  font-family: 'GmarketSansMedium';
 }
 .inner{
-  width: 1000px;
+  width: 1100px;
   margin:  0 auto;
 }
 .inner-mid{
@@ -41,6 +44,7 @@
   justify-content: space-around;
   align-items: center;
   margin-top: var(--comment-magin-top);
+  flex: 1;
   
 }
 /* 로고 */
@@ -54,25 +58,32 @@
 /* 검색 */
 .main-header_search{
   /* background-color: var(--main-color2); */
-  border: var(--main-color2) 3px solid;
+  /* border: var(--main-color2) 3px solid; */
+  background-color: var(--main-color2);
   border-radius: 24px;
-  width: 300px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  
 }
 .main-header_search input{
   border: none;
   background-color: transparent;
-  height: 30px;
+  height: 40px;
   outline: none;
   padding-left: 20px;
-  width: 80%;
+  width: 100%;
   
 }
 .main-header_search i {
-  padding: 0 10px 0 0;
+  padding: 0 20px 0 0;
+  color: var(--main-color);
+  
 }
 
 /* 로그인 */
 .main-header_login{
+  
   background-color: var(--main-color);
   padding: 10px;
   color: var(--main-textcolor);
@@ -89,6 +100,7 @@
   padding: 20px;
 }
 .main-navi ul li {
+  font-size: 1.3rem;
   flex: 1;
   color: var(--main-textcolor);
   text-align: center;
