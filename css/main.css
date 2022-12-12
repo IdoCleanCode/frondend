@@ -1,0 +1,112 @@
+/* 폰트 */
+@font-face {
+  font-family: 'Ansungtangmyun-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/Ansungtangmyun-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* 변수 */
+:root{
+  --main-color: #637760;
+  --main-color2: #d1cdc1;
+  --main-textcolor: #fff;
+  --comment-magin-top: 15px;
+}
+
+*{
+  font-size: 14px;
+  line-height: 1.7rem;
+  font-family: 'GmarketSansMedium';
+
+}
+.inner{
+  width: 1000px;
+  margin:  0 auto;
+}
+.inner-mid{
+  width: 900px;
+  margin:  0 auto;
+}
+/*----- 메인헤더 시작 -----*/
+.main-header {
+  display:  flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: var(--comment-magin-top);
+  
+}
+/* 로고 */
+
+.main-header_logo h1{
+  font-family:'Ansungtangmyun-Bold';
+  font-size: 32px;
+  color: var(--main-color);
+
+}
+/* 검색 */
+.main-header_search{
+  /* background-color: var(--main-color2); */
+  border: var(--main-color2) 3px solid;
+  border-radius: 24px;
+  width: 300px;
+}
+.main-header_search input{
+  border: none;
+  background-color: transparent;
+  height: 30px;
+  outline: none;
+  padding-left: 20px;
+  width: 80%;
+  
+}
+.main-header_search i {
+  padding: 0 10px 0 0;
+}
+
+/* 로그인 */
+.main-header_login{
+  background-color: var(--main-color);
+  padding: 10px;
+  color: var(--main-textcolor);
+  border-radius: 5px;
+}
+
+/* 메인 네비 시작 */
+.main-navi{
+  margin-top: var(--comment-magin-top);
+}
+.main-navi ul{
+  display: flex;
+  background-color: var(--main-color);
+  padding: 20px;
+}
+.main-navi ul li {
+  flex: 1;
+  color: var(--main-textcolor);
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  
+  
+}
+/* .main-navi ul:hover{
+  background-color: #d1cdc1;
+} */
+
+.main-navi ul li::after{
+  content: "|";
+  position: absolute;
+  left: 100%;
+  
+}
+.main-navi ul li:last-child::after{
+  display: none;
+}
