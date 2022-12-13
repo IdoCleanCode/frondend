@@ -33,7 +33,7 @@
 
   /* size */
   width: 100%;
-  height: 800px;
+  height: 600px;
   /* flex item의 flex-shrink는 기본값이 1이므로 컨테이너 크기에 맞게 줄어드는데, 슬라이드를 구현할 것이므로 줄어들지 않도록 0을 준다. */
   flex-shrink: 0;
 
@@ -85,6 +85,7 @@
   /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
   left: 50%;
   transform: translateX(-50%);
+  bottom: 0;
 }
 .slide_pagination > li {
   /* 현재 슬라이드가 아닌 것은 투명도 부여 */
@@ -113,12 +114,13 @@
 
 .fa-chevron-left{
   font-size: 35px;
-  color: var(--main-color);
+  color: #677788 ;
+  opacity: 50%;
 }
 .fa-chevron-right{
   font-size: 35px;
-  color: var(--main-color);
-
+  color:  #677788;
+  opacity: 50%;
 }
 
 .slide_button {
@@ -138,6 +140,6 @@
 
   /* style */
   border-radius: 100%;
-  background-color: var(--main-color2);
+  /* background-color: var(--main-color2); */
   cursor: pointer;
 }
