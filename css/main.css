@@ -30,6 +30,10 @@
 li{
   font-family: 'GmarketSansMedium';
 }
+.inner-lage{
+  max-width: 1950px;
+   margin:  0 auto;
+}
 .inner{
   width: 1100px;
   margin:  0 auto;
@@ -57,7 +61,8 @@ li{
 }
 /* 검색 */
 .main-header_search{
-  border: var(--main-color) 3px solid;
+  margin-left: -3em;
+  /* border: var(--main-color) 3px solid; */
   background-color: var(--main-color2);
   border-radius: 24px;
   width: 500px;
@@ -70,9 +75,9 @@ li{
   background-color: transparent;
   height: 40px;
   outline: none;
-  padding-left: 20px;
+  padding-left: 2em;
   width: 100%;
-  
+  font-size: 1.2rem;
 }
 .main-header_search i {
   padding: 0 20px 0 0;
@@ -93,6 +98,7 @@ li{
 /* 메인 네비 시작 */
 .main-navi{
   margin-top: var(--comment-magin-top);
+  background-color: var(--main-color);
 }
 .main-navi > ul{
   display: flex;
@@ -109,13 +115,12 @@ li{
   
   
 }
-/* .main-navi ul:hover{
-  background-color: #d1cdc1;
-} */
+
 
 .main-navi > ul >li::after{
   content: "|";
   position: absolute;
+  color: var(--main-color2);
   left: 100%;
   
 }
