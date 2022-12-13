@@ -1,3 +1,6 @@
+.slide-container{
+  margin-top: var(--comment-magin-top)
+}
 .slide {
   /* layout */
   display: flex;

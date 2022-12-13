@@ -1,28 +1,20 @@
 .collection{
   margin-top: var(--comment-magin-top);
-  height: 300px;
   margin-top: 4em;
 }
 .collection_ttl {
   text-align: center;
   color: var(--main-color);
   font-size: 1rem;
-  font-weight: 900;
 }
 .collection_txt{
   text-align: center;
   font-size: 1.4rem;
-
-}
-.swiper {
-  width: 100%;
-  height: 100%;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: rgb(216, 120, 120);
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -38,29 +30,52 @@
   -webkit-align-items: center;
   align-items: center;
 }
+/* .swiper-container{
+  width: 1150px;
+  overflow: hidden;
+  margin: 0 auto;
+} */
 .swiper{
+  width: 1100px;
+  /* overflow:visible */
+  margin-top: 2em;
+}
 
-}
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.swiper-wrapper{
-}
 .swiper-pagination{
-  margin-top: 1em;
+  margin-top: 3em;
   position: relative;
 }
 .swiper-slide{
-  display: flex;
+  
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.collection-img{
-  width: 100%;;
+.collection-img {
+  border-radius: .5em .5em 0 0;
+  display: block;
+  width: 100%; 
+  height: 240px;
+  /* object-fit: cover; */
 }
+
 .swiper-pagination-bullet-active {
-  background-color: var(--main-color) ;
+  background-color: var(--main-color) 
+}
+.collection-img-ttl{
+  color: var(--main-color);
+  font-size: .9rem;
+}
+.collection-img-txt{
+  font-size: 1.ㅁrem;
+  text-align: left;
+}
+.moreDetails{
+  text-align: center;
+  width: fit-content;
+  padding:.4em 2em .4em 2em ;
+  border: var(--main-color) 1px solid;
+  color: var(--main-color);
+  border-radius: .4em;
 }
