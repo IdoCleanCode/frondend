@@ -1,6 +1,7 @@
 .collection{
   margin-top: var(--comment-magin-top);
   height: 300px;
+  margin-top: 4em;
 }
 .collection_ttl {
   text-align: center;
@@ -13,23 +14,6 @@
   font-size: 1.4rem;
 
 }
-
-
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -54,10 +38,29 @@ body {
   -webkit-align-items: center;
   align-items: center;
 }
+.swiper{
 
+}
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.swiper-wrapper{
+}
+.swiper-pagination{
+  margin-top: 1em;
+  position: relative;
+}
+.swiper-slide{
+  display: flex;
+  flex-direction: column;
+}
+
+.collection-img{
+  width: 100%;;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--main-color) ;
 }
