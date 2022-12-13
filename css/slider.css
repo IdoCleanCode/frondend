@@ -79,25 +79,28 @@ li {
   /* layout */
   display: flex;
   gap: 5px;
+  align-self: center;
 
   /* position */
   position: absolute;
-  bottom: 0;
+  margin-top: 5px;  
   /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
   left: 50%;
   transform: translateX(-50%);
 }
 .slide_pagination > li {
   /* 현재 슬라이드가 아닌 것은 투명도 부여 */
-  color: calc(--main-color);
+  color: var(--main-color2);
   cursor: pointer;
   font-size: 25px;
+  padding: 0.3em;
 }
 .slide_pagination > li.active {
   /* 현재 슬라이드 색상은 투명도 없이 */
-  color: #7fb5ff;
+  color: var(--main-color);
+  transform: scale(1.4);
+  
 }
-
 .slide_item_duplicate {
   display: flex;
   align-items: center;
@@ -116,6 +119,8 @@ li {
 }
 .fa-chevron-right{
   font-size: 35px;
+  color: var(--main-color);
+
 }
 
 .slide_button {

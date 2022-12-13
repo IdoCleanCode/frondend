@@ -9,19 +9,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
 
   <!-- css -->
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/slider.css">
   <link rel="stylesheet" href="./css/collection.css">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-/>
+  <link rel="stylesheet" href="./css/dropdown.css">
 
   <!-- js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" ></script>
   <script src="./js/slider.js" defer></script>
+  <script src="./js/dropdown.js" defer></script>
   <script src="./js/collerctionSlider.js" defer></script>
-  
+  <!-- 부트스트랩 -->
+
   <title>나만의 박물관</title>
 </head>
 <body>
@@ -43,16 +43,31 @@
         로그인
       </div>
     </div>
+    <!-- 리스트 -->
     <div class="main-navi inner">
       <ul>
         <li>문화재</li>
         <li>컬렉션</li>
         <li>테마별 안내</li>
         <li>행사일정</li>
-        <li>커뮤니티</li>
+        <li class="dropdown-parents">커뮤니티 
+          <i class="dropdown-parents-icon fa-solid fa-chevron-down"></i>
+          <div class="dropdown">
+            <ul >
+              <li>커뮤니티</li>
+              <li>커뮤니티</li>
+              <li>커뮤니티</li>
+              <li>커뮤니티</li>
+              <li>커뮤니티</li>
+            </ul>
+        </li>
       </ul>
+      </div>
     </div>
   </header>
+
+  <!-- 메인 슬라이더 -->
+  <div class="slide-container">
   <div class="slide slide_wrap inner">
     <div class="slide_item item1"></div>
     <div class="slide_item item2"></div>
@@ -61,10 +76,10 @@
     <div class="slide_item item5"></div>
     <div class="slide_prev_button slide_button"><i class="fa-solid fa-chevron-left"></i></div>
     <div class="slide_next_button slide_button"><i class="fa-solid fa-chevron-right"></i></div>
-    <ul class="slide_pagination"></ul>
   </div>
-
-  <main>
+  <ul class="slide_pagination"></ul>
+</div>
+  <!-- <main>
     <div class="collection inner-mid" >
       <div class="collection_ttl"><p>컬렉션 추천</p></div>    
       <div class="collection_txt"><p>이런 문화재는 어때요?</p></div>    
@@ -82,12 +97,12 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-
+      
+      
     </div>    
+      
+  </main> -->
 
-  </main>
-
-  
 </body>
 
 </html>

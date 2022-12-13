@@ -1,0 +1,29 @@
+
+.main-navi {
+  position: relative;
+}
+.dropdown{
+  margin-top: .4em;
+  position: absolute;
+    background: #fff;
+  top: 300%;
+  color: var(--main-color);
+  width: 100%;
+  opacity: 0;
+  
+
+}
+.dropdown > ul > li{
+  padding: .5em 0 .5em  0 ;
+}
+.show{
+  top: 100%;
+  opacity: 100;
+  transition: all 0.5s  ;
+  z-index: 1;
+
+}
+.rotateIcon{
+  transform: rotateX( 180deg);
+  transition: all 0.5s
+}
