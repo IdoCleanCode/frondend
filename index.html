@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kor">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./css/slider.css">
   <link rel="stylesheet" href="./css/collection.css">
   <link rel="stylesheet" href="./css/dropdown.css">
+  <link rel="stylesheet" href="./css/both-theme-communtiy.css">
 
   <!-- js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" ></script>
@@ -28,7 +29,7 @@
   <!-- 헤더시작 -->
   <header >
     <!-- 메인헤더 -->
-    <div class="main-header inner">
+    <div class="main-header ">
       <!-- 로그 -->
       <div class="main-header_logo">
         <h1>나만의 박물관</h1>
@@ -82,65 +83,128 @@
 <!-- 메인 -->
   <main>
     <!-- 컬렉션 시작-->
-    <div class="collection" >
-      <div class="collection_ttl"><p>컬렉션 추천</p></div>    
-      <div class="collection_txt"><p>이런 문화재는 어때요?</p></div> 
+    <section class="collection">
+      <div class="collection_ttl"><h1>컬렉션 추천</h1></div>    
+      <div class="collection_txt"><h2>이런 문화재는 어때요?</h2></div> 
       <div class="swiper-container">
       <div class="swiper mySwiper" >
           <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./img/collection-1.jpg" alt="" class="collection-img">
-            <div class="collection-img-ttl">국보</div>
-            <div class="collection-img-txt">경주 불국사 다보탑</div>
+            <div class="collection-img-ttl"><h3>국보</h3></div>
+            <div class="collection-img-txt"><h3>경주 불국사 다보탑</h3></div>
           </div>
           <div class="swiper-slide">
             <img src="./img/collection-2.jpg" alt="" class="collection-img">
-            <div class="collection-img-ttl">국보</div>
-            <div class="collection-img-txt">금동계미명삼촌불입상</div>
+            <div class="collection-img-ttl"><h3>국보</h3></div>
+            <div class="collection-img-txt"><h3>금동계미명삼촌불입상</h3></div>
           </div>
           <div class="swiper-slide">
             <img src="./img/collection-3.jpg" alt="" class="collection-img">
-            <div class="collection-img-ttl">국보</div>
-            <div class="collection-img-txt">투각칠보문뚜껑</div>
+            <div class="collection-img-ttl"><h3>국보</h3></div>
+            <div class="collection-img-txt"><h3>투각칠보문뚜껑</h3></div>
           </div>
           <div class="swiper-slide">
             <img src="./img/collection-4.jpg" alt="" class="collection-img">
-            <div class="collection-img-ttl">국보</div>
-            <div class="collection-img-txt">금동미륵보살반</div>
+            <div class="collection-img-ttl"><h3>국보</h3></div>
+            <div class="collection-img-txt"><h3>금동미륵보살반</h3></div>
           </div>
           <div class="swiper-slide">
             <img src="./img/collection-5.jpg" alt="" class="collection-img">
-            <div class="collection-img-ttl">국보</div>
-            <div class="collection-img-txt">계유명전씨아미타불비상</div>
+            <div class="collection-img-ttl"><h3>국보</h3></div>
+            <div class="collection-img-txt"><h3>계유명전씨아미타불비상</h3></div>
           </div>
           <div class="swiper-slide">
             <img src="./img/collection-6.jpg" alt="" class="collection-img">
-            <div class="collection-img-ttl">국보</div>
-            <div class="collection-img-txt">금동미륵보살반가사유상</div>
+            <div class="collection-img-ttl"><h3>국보</h3></div>
+            <div class="collection-img-txt"><h3>금동미륵보살반가사유상</h3></div>
           </div>
           <div class="swiper-slide">
             <img src="./img/collection-7.jpg" alt="" class="collection-img">
-            <div class="collection-img-ttl">국보</div>
-            <div class="collection-img-txt">증흥산성 쌍사자</div>
+            <div class="collection-img-ttl"><h3>국보</h3></div>
+            <div class="collection-img-txt"><h3>증흥산성 쌍사자</h3></div>
           </div>
           <div class="swiper-slide">
             <img src="./img/collection-8.jpg" alt="" class="collection-img">
-            <div class="collection-img-ttl">국보</div>
-            <div class="collection-img-txt">상원사 동종</div>
+            <div class="collection-img-ttl"><h3>국보</h3></div>
+            <div class="collection-img-txt"><h3>상원사 동종</h3></div>
           </div>
           <div class="swiper-slide">
             <img src="./img/collection-9.jpg" alt="" class="collection-img">
-            <div class="collection-img-ttl">국보</div>
-            <div class="collection-img-txt">석굴암</div>
+            <div class="collection-img-ttl"><h3>국보</h3></div>
+            <div class="collection-img-txt"><h3>석굴암</h3></div>
           </div>
         </div>
       </div>
     </div>   
-      <div class="swiper-pagination"></div>
-      <div class="moreDetails inner-mid"><p>더 많은 문화재 보러가기</p></div>
-    </div>  <!--컬렉션 끝-->  
-      
-  </main>
+    <div class="swiper-pagination"></div>
+    <div class="moreDetails inner-mid"><p>더 많은 문화재 보러가기</p></div>
+  </section>  
+</main>
+  
+  <!-- 테마투어 -->
+  <div class="both-container">
+    <section class="theme-tour ">
+      <div class="theme-tour-ttl"><h1>테마별 문화재투어</h1></div>
+      <div class="theme-tour-txt"><h2>방문 인증하고 스탬프도 받자!</h2></div>
+      <div class="themes">
+        <div class="theme">
+          <img  src="./img/theme-1.jpg" ialt="" class="theme-img">
+          <div class="theme-img-txt">
+              <p>테마1</p>
+            </div>
+          
+        </div>
+        <div class="theme">
+          <img  src="./img/theme-2.jpg" ialt="" class="theme-img">
+          <div class="theme-img-txt">
+            <p>테마2</p>
+          </div>
+        </div>
+        <div class="theme">
+          <img  src="./img/theme-3.jpg" ialt="" class="theme-img">
+          <div class="theme-img-txt">
+            <p>테마3</p>
+          </div>
+        </div>
+        <div class="theme">
+          <img  src="./img/theme-4.jpg" ialt="" class="theme-img">
+          <div class="theme-img-txt">
+            <p>테마4</p>
+          </div>
+        </div>
+        <div class="theme">
+          <img  src="./img/theme-5.jpg" ialt="" class="theme-img">
+          <div class="theme-img-txt">
+            <p>테마5</p>
+          </div>
+        </div>
+        <div class="theme">
+          <img  src="./img/theme-6.jpg" ialt="" class="theme-img">
+          <div class="theme-img-txt">
+            <p>더 보러 가기</p>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    <section class="community">
+      <div class="community-ttl"><h1>커뮤니티</h1></div>
+      <div class="community-txt"><h2>자유게시판</h2><h3>더 보러가기 ➡</h3></div>
+
+      <div class="community-contexts">
+        <p class="community-context">게시물1</p>
+        <p class="community-context">게시물2</p>
+        <p class="community-context">게시물3</p>
+        <p class="community-context">게시물4</p>
+        <p class="community-context">게시물5</p>
+        <p class="community-context">게시물6</p>
+        <p class="community-context">게시물7</p>
+        <p class="community-context">게시물8</p>
+        <p class="community-context">게시물9</p>
+      </div>
+    </section>
+
 
 </body>
 

@@ -1,0 +1,77 @@
+.both-container{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2em;
+}
+/* 투어테마 */
+.theme-tour{
+  flex: 1;
+  margin-top: var(--comment-magin-top);
+}
+.theme-tour-ttl{
+  color: var(--main-color);
+  font-size: var(--comment-ttl-fontsize);
+}
+.theme-tour-txt{
+  font-size: var(--comment-txt-fontsize);
+}
+
+.themes{
+  display: grid; 
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px;
+}
+.theme{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+}
+.theme > .theme-img-txt{
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  color: white;
+}
+
+.theme-img{
+  opacity: .9;
+  width: 100%;
+  height: 100%;
+}
+.theme-img:hover{
+  transform: scale(1.2);
+}
+.theme-opacity{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+/* 커뮤니티 */
+
+.community{
+  flex: 1;
+  margin-top: var(--comment-magin-top);
+}
+.community-ttl{
+  color: var(--main-color);
+  font-size: var(--comment-ttl-fontsize);
+}
+.community-txt{
+  display: flex;
+  justify-content: space-between;
+}
+.community-txt h2{
+  font-size: var(--comment-txt-fontsize);
+}
+.community-contexts{
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.community-context{
+  padding: 1em;
+}
